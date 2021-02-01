@@ -1,95 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My resume</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <style>
-        h4 {
-            text-align: center;
-            background-color: rgba(45, 45, 45, 0.1);
-            padding: 10px;
-            font-size: 27px;
-
-        }
-
-        p {
-            text-align: justify;
-        }
-
-        .links {
-            text-align: left;
-            color: black;
-            opacity: 0.7;
-        }
-
-        #thumbnail {
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-        }
-
-        .fullCard {
-            width: 245px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 10px 5px;
-            padding: 4px;
-        }
-
-        .cardContent {
-            padding: 10px;
-        }
-
-        .cardText {
-            margin-bottom: 30px;
-        }
-    </style>
-    <div class="fullCard" id="thumbnail">
-        <div class="cardContent">
-            <div class="cardText">
-                <h4>Alphabet</h4>
-                <hr>
-                <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at
-                        <strong>Stanford University</strong>.</em></p>
+    <!--main container-->
+    <div class="wrapper">
+        <aside class="sidbar">
+            <img class="my-foto" src="./img/photo.jpg" alt="My foto">
+            <!-- contacts conteiner-->
+            <div class="contacts-conteiner">
+                <h3 class="contacts-title">Contacts</h3>
+                <div>
+                    <span class="contacts-link-title"> C: </span>
+                    <a class="contacts-link" href="tel:+380665081049">+38 066 508 10 49</a> 
+                </div>
+                <div>
+                    <span class="contacts-link-title"> E: </span>
+                    <a class="contacts-link" href="mailto:suhokon@protonmail.com">suhokon@protonmail.com</a>
+                </div>
             </div>
-            <div class="cardLinks">
-                <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a><br><br>
-                <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
+            <!-- tech skills conteiner -->
+            <div class="tech-skills-conteiner">
+                <h3 class="tech-skills-title">About me</h3>
+                <ul>
+                    <h4 class="tech-skills-item"><span>Date of birth</span> 
+                        <span class="tech-skills-text">26/06/1979</span></h4>
+                </ul>
+                <ul>
+                    <h4 class="tech-skills-item"><span>Place of residence</span> 
+                        <span class="tech-skills-text"></span></h4>
+                </ul>
+                <h4 class="tech-skills-item"><span></span> 
+                    <span class="tech-skills-text">Ukraine, Kherson</span></h4>
+            </div>
+            <!-- soft skills conteiner -->
+            <div class="soft-skills-conteiner">
+                <h3 class="soft-skills-title">Profession</h3>
+                <ul>
+                    <li class="soft-skills-item"> 
+                        <span class="soft-skills-text">Ecologist</span></li>
+                    <li class="soft-skills-item"> 
+                        <span class="soft-skills-text">Electrician</span></li>
+                    <li class="soft-skills-item"> 
+                        <span class="soft-skills-text">Freelancer</span></li>
+                </ul>
+            </div>
+            <div class="soft-skills-conteiner">
+                <h3 class="soft-skills-title">Languages</h3>
+                <ul>
+                    <li class="soft-skills-item"> 
+                        <span class="soft-skills-text">Russian</span></li>
+                    <li class="soft-skills-item"> 
+                        <span class="soft-skills-text">Ukrainian</span></li>
+                    <li class="soft-skills-item"> 
+                        <span class="soft-skills-text">English B1</span></li>
+                    </span></li>
+                </ul>
+            </div>
+        </aside>
+        <!--about me container-->
+        <div class="about-me-container">
+            <!--about me main info-->
+            <div class="info-container">
+                <h2 class="profession">Ecologist, seaman, ship electrician, electrician, builder, freelancer</h2>
+                <h1 class="name" >Dmytro Suhokon</h1>
+                <p class="description">Love for nature and the sea has determined my professional path.</p>
+            </div>
+           
+            <!--work experience-->
+            <div>
+                <h3 class="about-me-title">Work Experience</h3>
+
+                <!--company 1-->
+                <div>
+                <h4 class="profession-title">Ecological inspector <span class="profession-company">Regional department natural resources</span></h4>
+                <span class="profession-time">February 2004 - August 2006 <span class="profession-divider">|</span> Ukraine </span>
+                <ul class="profession-dutis">
+                    <li class="profession-dutis-item">Inspection of ships</li>
+                </ul>
+                </div>
+                <!--company 2-->
+                <div>
+                    <h4 class="profession-title">Seaman, ship electrician <span class="profession-company">Foreign shipowners</span></h4>
+                    <span class="profession-time">September 2006 - December 2010 <span class="profession-divider">|</span> Ukraine </span>
+                    <ul class="profession-dutis">
+                        <li class="profession-dutis-item">Watch, painting, diesel generator service</li>
+                    </ul>
+                </div>
+                <!--company 3-->
+                <div>
+                    <h4 class="profession-title">Electrician <span class="profession-company">Khersonoblenergo Ltd</span></h4>
+                    <span class="profession-time">January 2011 - August 2012 <span class="profession-divider">|</span> Ukraine </span>
+                    <ul class="profession-dutis">
+                        <li class="profession-dutis-item">Repair of power lines</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="profession-title">Builder / Freelancer <span class="profession-company">Off line / On line</span></h4>
+                    <span class="profession-time">September 2012 - up to now <span class="profession-divider">|</span> Ukraine </span>
+                    <ul class="profession-dutis">
+                        <li class="profession-dutis-item">Construction works</li>
+                        <li class="profession-dutis-item">Website development</li>
+                    </ul>
+                </div>
+                <!--education container-->
+                <div>
+                    <h3 class="about-me-title">Education</h3>
+                    <h4 class="education-container">Kiev Mohyla Academy</h4>
+                    <h5 class="profession-title">Faculty of Ecology</h5>
+                    <span class="profession-time">Septermber 1998 - July 2003 <span class="profession-divider">|</span> Ukraine </span>
+                    <h4 class="education-container">Seafarers Training and Certification Centre</h4>
+                    <h5 class="profession-title">Seaman</h5>
+                    <span class="profession-time">Septermber 2006 - April 2007 <span class="profession-divider">|</span> Ukraine </span>
+                </div>
+
             </div>
         </div>
     </div>
-    <h2>CatPhotoApp</h2>
-    <main>
-        <p>Click here to view more <a href="#">cat photos</a>.</p>
-
-        <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
-
-        <p>Things cats love:</p>
-        <ul>
-            <li>cat nip</li>
-            <li>laser pointers</li>
-            <li>lasagna</li>
-        </ul>
-        <p>Top 3 things cats hate:</p>
-        <ol>
-            <li>flea treatment</li>
-            <li>thunder</li>
-            <li>other cats</li>
-        </ol>
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-            <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
-            <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
-            <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
-            <label for="lazy"><input id="lazy" type="checkbox" name="personality"> Lazy</label>
-            <label for="energetic"><input id="energetic" type="checkbox" name="personality"> Energetic</label><br>
-            <input type="text" placeholder="cat photo URL" required>
-            <button type="submit">Submit</button>
-        </form>
-    </main>
-    <footer id="footer">Copyright Cat Photo App</footer>
-</body>
-
+    </body>
 </html>
